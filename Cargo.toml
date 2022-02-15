@@ -1,0 +1,14 @@
+[package]
+edition = "2021"
+name = "call-rust-from-node"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = {version = "2"}
+napi-derive = {version = "2"}
+
+[build-dependencies]
+napi-build = "1"
